@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Martin Mena",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d public"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "request": "^2.85.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
