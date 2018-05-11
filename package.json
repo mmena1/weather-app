@@ -5,15 +5,20 @@
   "author": "Martin Mena",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d public"
+    "build": "babel src -d public",
+    "test": "mocha src/**/*.test.js",
+    "test-watch": "nodemon --exec 'yarn test'"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "request": "^2.85.0",
     "yargs": "^11.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^5.1.1"
   }
 }
